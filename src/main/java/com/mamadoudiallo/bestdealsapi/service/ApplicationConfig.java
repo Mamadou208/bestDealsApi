@@ -31,6 +31,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources)
     {
+        resources.add(com.mamadoudiallo.bestdealsapi.crossOrigin.CrossOriginResourceSharingFilter.class);
         resources.add(com.mamadoudiallo.bestdealsapi.service.PaymentsFacadeREST.class);
         resources.add(com.mamadoudiallo.bestdealsapi.service.ProductsFacadeREST.class);
         resources.add(com.mamadoudiallo.bestdealsapi.service.SalesFacadeREST.class);
